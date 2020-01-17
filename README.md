@@ -121,7 +121,7 @@ Examples:
     # Show commannds options
     ./run.sh --help 
 
-    # Runs in container in production mode
+    # Runs in console in production mode
     ./run.sh 
 
     # Runs in console in production mode

@@ -4,8 +4,8 @@ helpFunction()
    echo "Usage: $0 [OPTIONS] [ARGS]"
    echo "Options:"
    echo "\t-h, --help, -?, --?               Display this help"
-   echo "\t-t, --target [console|container]  Sets target"
-   echo "\t-m, --mode [prod|dev]             App mode"
+   echo "\t-t, --target=[console|container]  Sets target"
+   echo "\t-m, --mode=[prod|dev]             App mode"
    echo "\nArgs:"
    echo "\t-b, --build                       When target is container, rebuilds container if it is already built"
    exit 1 # Exit script after printing help
@@ -13,7 +13,7 @@ helpFunction()
 
 TARGET=console
 MODE=prod
-
+BUILD=no
 
 for i in "$@"
 do
