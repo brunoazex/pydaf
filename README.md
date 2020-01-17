@@ -25,7 +25,7 @@ To abstract repetitive related tasks to retrieve, process and deliver data trans
     ```python   
         def run(self):
             self.dataset \
-                .to_console() \ # Prints out dataset into console
+                .to_console() # Prints out dataset into console
                 .to_csv() # Exports processed data to `output_dir` specified in settings
     ```
 
