@@ -1,0 +1,7 @@
+app:
+    output_dir: './output/'    
+processors:
+    path: './processors/'
+    queue:
+        - "ChallengeOne"
+        - "ChallengeTwo"

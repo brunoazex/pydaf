@@ -1,0 +1,17 @@
+version: '3'
+services:
+    app:
+        build:
+            context: ..
+            dockerfile: ./container/Dockerfile
+        command: 'python3 main.py'        
+        working_dir: /app/
+        environment:
+            OUTPUT_DIR: ./output/
+            DB_HOST: ${DB_HOST}
+            DB_NAME: ${DB_NAME}
+            DB_USER: ${DB_USER}
+            DB_PASS: ${DB_PASS}
+        volumes:
+        - ../output:/app/output
+    

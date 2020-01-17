@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Environment variables
+container/.env
+
+# output path
+output/
