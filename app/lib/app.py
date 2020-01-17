@@ -7,7 +7,7 @@ import os, sys
 class App(object):    
     def _discover_processors(self):
         processors = []
-        for py in [f[:-3] for f in os.listdir('%s/processors' % self.root_path) if f.endswith('.py') and f != '__init__.py']:
+        for py in [f[:-3] for f in os.listdir('%s/%s' % (self.root_path, self.environment.processors.path)) if f.endswith('.py') and f != '__init__.py']:
             mod = __import__('.'.join(['processors', py]), fromlist=[py])
             classes = [getattr(mod, x) for x in dir(mod) if isinstance(getattr(mod, x), type)]
             for cls in classes:
